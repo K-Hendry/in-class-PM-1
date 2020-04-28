@@ -10,6 +10,14 @@ footer{
         grid-template-columns: 20% auto 20%;
     }
 
+    @include lg{
+        grid-template-columns: 30% auto 30%;
+    }
+
+    @include xl{
+        grid-template-columns: 40% auto 40%;
+    }
+
     #footer-content{
         grid-area: footer;
         border: 1px solid red;
