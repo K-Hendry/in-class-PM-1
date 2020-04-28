@@ -322,6 +322,16 @@ ul {
   ul li {
     list-style: none; }
 
+.show-for-md {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-md {
+      display: block; } }
+.show-for-lg {
+  display: none; }
+  @media (min-width: 992px) {
+    .show-for-lg {
+      display: block; } }
 /* =============
     Typography
 ============= */
@@ -423,5 +433,30 @@ footer {
     grid-area: section-5;
     display: grid;
     gap: 20px; }
+    @media (min-width: 768px) {
+      #section-5 ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "g1 g3" "g1 g7" "g5 g6"; } }
     #section-5 ul li img {
       width: 100%; }
+    @media (min-width: 768px) {
+      #section-5 ul #g1 {
+        grid-area: g1; } }
+    @media (min-width: 768px) {
+      #section-5 ul #g2 {
+        grid-area: g2; } }
+    @media (min-width: 768px) {
+      #section-5 ul #g3 {
+        grid-area: g3; } }
+    @media (min-width: 768px) {
+      #section-5 ul #g4 {
+        grid-area: g4; } }
+    @media (min-width: 768px) {
+      #section-5 ul #g5 {
+        grid-area: g5; } }
+    @media (min-width: 768px) {
+      #section-5 ul #g6 {
+        grid-area: g6; } }
+    @media (min-width: 768px) {
+      #section-5 ul #g7 {
+        grid-area: g7; } }
