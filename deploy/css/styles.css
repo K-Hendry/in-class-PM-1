@@ -451,6 +451,9 @@ footer {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: '. section-5 .'; }
+  @media (min-width: 1200px) {
+    #section-5 {
+      grid-template-columns: auto 1200px auto; } }
   #section-5 ul {
     grid-area: section-5;
     display: grid;
@@ -459,18 +462,22 @@ footer {
       #section-5 ul {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "g1 g3" "g1 g7" "g5 g6"; } }
+    @media (min-width: 992px) {
+      #section-5 ul {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "g1 g2 g3" "g1 g7 g4" "g6 g5 g4"; } }
     #section-5 ul li img {
       width: 100%; }
     @media (min-width: 768px) {
       #section-5 ul #g1 {
         grid-area: g1; } }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       #section-5 ul #g2 {
         grid-area: g2; } }
     @media (min-width: 768px) {
       #section-5 ul #g3 {
         grid-area: g3; } }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       #section-5 ul #g4 {
         grid-area: g4; } }
     @media (min-width: 768px) {
