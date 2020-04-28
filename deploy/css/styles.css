@@ -366,8 +366,12 @@ footer {
   display: grid;
   grid-template-columns: 6% auto 6%;
   grid-template-areas: ". footer ."; }
+  @media (min-width: 768px) {
+    footer {
+      grid-template-columns: 20% auto 20%; } }
   footer #footer-content {
-    grid-area: footer; }
+    grid-area: footer;
+    border: 1px solid red; }
 
 /* =============
     Section 1
