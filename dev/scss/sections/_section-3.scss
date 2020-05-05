@@ -21,9 +21,18 @@
         }
 
         aside{
-        
-            img{
-                width: 100%;
+            background-image: url("../img/section-3/grid-bot.jpg");
+            height: 60vh;
+            background-position: -200px 0;
+            background-size: cover;
+
+            @include md{
+                height: 50vh;
+                background-position: center;
+            }
+
+            @include lg{
+                height: 40vh;
             }
         }
     
