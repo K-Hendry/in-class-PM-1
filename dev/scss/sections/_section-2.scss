@@ -39,14 +39,52 @@
                 @include md {
                     grid-area: section-2-intro;
                 }
+
+                img{
+                
+                }
+
+                h1{
+                    margin: 50px 0 30px;
+                    color: $yellow;
+
+                    @include md{
+                        margin: 34px 0 33px;
+                    }
+
+                    @include lg{
+                        margin: 28px 0 36px;
+                    }
+                }
+
+                h3{
+
+                }
+            }
+        }
+
+        #section-2-middle{
+            p{
+                margin-top: 24px;
+
+                @include md{
+                    margin-top: 34px;
+                }
             }
         }
 
         #section-2-date {
+            margin-top: 35px;
+
             @include md {
                 display: grid;
                 grid-template-areas: ". section-2-date .";
                 grid-template-columns: 10% auto 10%;
+                margin-top: 88px;
+            }
+
+            @include lg{
+                margin-top: 91px;
             }
 
             #section-2-date-content {
