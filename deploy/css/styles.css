@@ -520,15 +520,42 @@ footer {
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-3 .";
   background-color: #222222;
-  color: #fff; }
+  color: #fff;
+  padding: 60px 0 10px 0; }
   @media (min-width: 768px) {
     #section-3 #section-3-desktop #section-3-container {
       grid-template-columns: 10% auto 10%; } }
   #section-3 #section-3-desktop #section-3-container #section-3-content {
-    grid-area: section-3;
-    border: 1px solid blue; }
+    grid-area: section-3; }
     #section-3 #section-3-desktop #section-3-container #section-3-content h1 {
-      color: #F8C832; }
+      font-family: 'Comfortaa', cursive;
+      font-size: 1.3125rem;
+      margin-bottom: 30px; }
+    #section-3 #section-3-desktop #section-3-container #section-3-content p {
+      line-height: 1.625rem; }
+    #section-3 #section-3-desktop #section-3-container #section-3-content ul li {
+      margin-bottom: 50px; }
+      #section-3 #section-3-desktop #section-3-container #section-3-content ul li .top {
+        display: flex; }
+        #section-3 #section-3-desktop #section-3-container #section-3-content ul li .top h4:first-child {
+          font-weight: 400; }
+        #section-3 #section-3-desktop #section-3-container #section-3-content ul li .top h4:last-child {
+          margin-left: auto; }
+      #section-3 #section-3-desktop #section-3-container #section-3-content ul li .bottom {
+        background-color: #000;
+        height: 9px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end; }
+        #section-3 #section-3-desktop #section-3-container #section-3-content ul li .bottom .yellow-bar {
+          height: 9px;
+          background-color: #F8C832; }
+    #section-3 #section-3-desktop #section-3-container #section-3-content ul #emotion .yellow-bar {
+      width: 62%; }
+    #section-3 #section-3-desktop #section-3-container #section-3-content ul #learning .yellow-bar {
+      width: 90%; }
+    #section-3 #section-3-desktop #section-3-container #section-3-content ul #math .yellow-bar {
+      width: 95%; }
 
 /* =============
     Section 4
