@@ -382,22 +382,25 @@ textarea {
 ============= */
 footer {
   background-color: #F8C832;
-  display: grid;
-  grid-template-columns: 6% auto 6%;
-  grid-template-areas: ". footer ."; }
-  @media (min-width: 768px) {
-    footer {
-      grid-template-columns: 20% auto 20%; } }
-  @media (min-width: 992px) {
-    footer {
-      grid-template-columns: 30% auto 30%; } }
-  @media (min-width: 1200px) {
-    footer {
-      grid-template-columns: 40% auto 40%; } }
+  text-align: center;
+  padding: 50px 0; }
   footer #footer-content {
     grid-area: footer; }
     footer #footer-content h1 {
-      margin-top: -50px; }
+      font-size: 1.25rem; }
+      footer #footer-content h1 span {
+        color: #fff; }
+    footer #footer-content ul {
+      display: flex;
+      justify-content: center; }
+      footer #footer-content ul li {
+        margin: 0 20px; }
+        footer #footer-content ul li a:link, footer #footer-content ul li a:visited {
+          font-size: 1.875rem;
+          color: #000;
+          transition: 0.25s; }
+        footer #footer-content ul li a:hover, footer #footer-content ul li a:active {
+          color: #fff; }
 
 /* =============
     Section 1
@@ -514,7 +517,7 @@ footer {
       background-position: center; } }
   @media (min-width: 992px) {
     #section-3 #section-3-desktop aside {
-      height: 40vh; } }
+      height: 100%; } }
 #section-3 #section-3-desktop #section-3-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
@@ -630,4 +633,12 @@ footer {
       background-image: url("../img/section-5/gallery-6.jpg");
       grid-area: g6; }
     #section-5 ul #g7 {
-      grid-area: g7; }
+      grid-area: g7;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #section-5 ul #g7 h1 {
+        color: #F8C832;
+        font-family: 'Pacifico', cursive;
+        font-size: 2.6875rem;
+        font-weight: 400; }

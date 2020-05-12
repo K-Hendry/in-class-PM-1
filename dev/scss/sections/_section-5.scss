@@ -84,6 +84,16 @@
 
         #g7 {
             grid-area: g7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                color: $yellow;
+                font-family: 'Pacifico', cursive;
+                font-size: rem-calc(43);
+                font-weight: 400;
+            }
         }
     }
 }
