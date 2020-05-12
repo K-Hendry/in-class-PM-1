@@ -25,6 +25,10 @@
     #section-2-content {
         grid-area: section-2;
 
+        p{
+            text-align: justify;
+        }
+
         #section-2-intro {
             @include md {
                 display: grid;
@@ -37,13 +41,31 @@
                     grid-area: section-2-intro;
                 }
 
-                img{
-                
+                #section-2-hero{
+                    // display: flex;
+                    // justify-content: center;
+                    >div{
+                        height: 113px;
+                        width: 113px;
+                        background-image: url("../img/section-5/gallery-3.jpg");
+                        border-radius: 100%;
+                        background-position: 195px 250px;
+                        margin: 0 auto;
+
+                        @include lg{
+                            height: 300px;
+                            width: 300px;
+                            background-size: 200%;
+                        }
+                    }
                 }
 
                 h1{
                     margin: 50px 0 30px;
                     color: $yellow;
+                    text-align: center;
+                    font-size: rem-calc(46);
+                    line-height: rem-calc(46);
 
                     @include md{
                         margin: 34px 0 33px;
@@ -51,6 +73,11 @@
 
                     @include lg{
                         margin: 28px 0 36px;
+                    }
+
+                    span{
+                        font-size: rem-calc(31);
+                        display: block;
                     }
                 }
 

@@ -429,6 +429,8 @@ footer {
       grid-template-columns: auto 800px auto; } }
   #section-2 #section-2-content {
     grid-area: section-2; }
+    #section-2 #section-2-content p {
+      text-align: justify; }
     @media (min-width: 768px) {
       #section-2 #section-2-content #section-2-intro {
         display: grid;
@@ -437,15 +439,33 @@ footer {
     @media (min-width: 768px) {
       #section-2 #section-2-content #section-2-intro #section-2-intro-content {
         grid-area: section-2-intro; } }
+    #section-2 #section-2-content #section-2-intro #section-2-intro-content #section-2-hero > div {
+      height: 113px;
+      width: 113px;
+      background-image: url("../img/section-5/gallery-3.jpg");
+      border-radius: 100%;
+      background-position: 195px 250px;
+      margin: 0 auto; }
+      @media (min-width: 992px) {
+        #section-2 #section-2-content #section-2-intro #section-2-intro-content #section-2-hero > div {
+          height: 300px;
+          width: 300px;
+          background-size: 200%; } }
     #section-2 #section-2-content #section-2-intro #section-2-intro-content h1 {
       margin: 50px 0 30px;
-      color: #F8C832; }
+      color: #F8C832;
+      text-align: center;
+      font-size: 2.875rem;
+      line-height: 2.875rem; }
       @media (min-width: 768px) {
         #section-2 #section-2-content #section-2-intro #section-2-intro-content h1 {
           margin: 34px 0 33px; } }
       @media (min-width: 992px) {
         #section-2 #section-2-content #section-2-intro #section-2-intro-content h1 {
           margin: 28px 0 36px; } }
+      #section-2 #section-2-content #section-2-intro #section-2-intro-content h1 span {
+        font-size: 1.9375rem;
+        display: block; }
     #section-2 #section-2-content #section-2-middle p {
       margin-top: 24px; }
       @media (min-width: 768px) {
