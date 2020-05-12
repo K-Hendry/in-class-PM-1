@@ -10,25 +10,43 @@ header {
 
     >div {
         display: grid;
-        grid-template-areas: "logo burger"
+        grid-template-areas: "burger logo"
             "nav nav";
-        grid-template-columns: 80% auto;
+        grid-template-columns: auto 80%;
 
         @include lg {
-            grid-template-areas: "logo nav";
-            grid-template-columns: 20% auto;
+            grid-template-areas: "nav logo";
+            grid-template-columns: auto 20%;
         }
 
         #logo-container {
             grid-area: logo;
             padding: 20px;
+            text-align: right;
+
+            a:link, a:visited{
+                color: $black;
+                font-size: rem-calc(18);
+                font-weight: 700;
+                background-color: $yellow;
+                text-decoration: none;
+                padding: 10px 25px;
+                border-radius: 23px;
+                transition: 0.25s;
+
+            }
+
+            a:hover, a:active{
+                color: $white;
+                background-color: $black;
+            }
         }
 
         #burger-container {
             align-items: center;
             display: flex;
             grid-area: burger;
-            justify-content: flex-end;
+            // justify-content: flex-end;
             padding: 20px;
 
             @include lg {
@@ -41,10 +59,10 @@ header {
         }
 
         #nav-container {
-            background-color: $light-grey;
+            background-color: $charcoal;
             display: none;
             grid-area: nav;
-            padding: 20px;
+            padding: 0 20px;
 
             @include lg {
                 background-color: $white;
