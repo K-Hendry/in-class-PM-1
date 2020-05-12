@@ -24,21 +24,22 @@ header {
             padding: 20px;
             text-align: right;
 
-            a:link, a:visited{
+            a:link,
+            a:visited {
+                background-color: $yellow;
+                border-radius: 23px;
                 color: $black;
                 font-size: rem-calc(18);
                 font-weight: 700;
-                background-color: $yellow;
-                text-decoration: none;
                 padding: 10px 25px;
-                border-radius: 23px;
+                text-decoration: none;
                 transition: 0.25s;
-
             }
 
-            a:hover, a:active{
-                color: $white;
+            a:hover,
+            a:active {
                 background-color: $black;
+                color: $white;
             }
         }
 
@@ -46,7 +47,6 @@ header {
             align-items: center;
             display: flex;
             grid-area: burger;
-            // justify-content: flex-end;
             padding: 20px;
 
             @include lg {

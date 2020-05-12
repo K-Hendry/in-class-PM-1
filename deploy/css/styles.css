@@ -380,33 +380,31 @@ textarea {
   @media (min-width: 992px) {
     #nav-container ul {
       display: flex; } }
-  #nav-container ul li {
-    border-bottom: 1px solid #fff; }
+  @media (min-width: 992px) {
+    #nav-container ul li {
+      align-items: center;
+      display: flex; } }
+  #nav-container ul li a:link,
+  #nav-container ul li a:visited {
+    font-family: 'Roboto Slab', serif;
+    color: #F8C832;
+    text-decoration: none;
+    transition: 0.25s;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    font-weight: 700; }
     @media (min-width: 992px) {
-      #nav-container ul li {
-        align-items: center;
-        display: flex; } }
-    #nav-container ul li a:link,
-    #nav-container ul li a:visited {
-      font-family: 'Roboto Slab', serif;
-      color: #F8C832;
-      text-decoration: none;
-      transition: 0.25s;
-      padding: 20px 0;
-      display: inline-block;
-      width: 100%;
-      font-weight: 700; }
-      @media (min-width: 992px) {
-        #nav-container ul li a:link,
-        #nav-container ul li a:visited {
-          color: #000;
-          font-size: 1.25rem;
-          padding: 5px 0;
-          border-right: 2px solid #000;
-          padding: 0 30px; } }
-    #nav-container ul li a:hover,
-    #nav-container ul li a:active {
-      color: #000; }
+      #nav-container ul li a:link,
+      #nav-container ul li a:visited {
+        color: #000;
+        font-size: 1.25rem;
+        padding: 5px 0;
+        border-right: 2px solid #000;
+        padding: 0 30px; } }
+  #nav-container ul li a:hover,
+  #nav-container ul li a:active {
+    color: #000; }
   @media (min-width: 992px) {
     #nav-container ul li:first-child a {
       border: none; } }
@@ -436,18 +434,20 @@ header {
       grid-area: logo;
       padding: 20px;
       text-align: right; }
-      header > div #logo-container a:link, header > div #logo-container a:visited {
+      header > div #logo-container a:link,
+      header > div #logo-container a:visited {
+        background-color: #F8C832;
+        border-radius: 23px;
         color: #000;
         font-size: 1.125rem;
         font-weight: 700;
-        background-color: #F8C832;
-        text-decoration: none;
         padding: 10px 25px;
-        border-radius: 23px;
+        text-decoration: none;
         transition: 0.25s; }
-      header > div #logo-container a:hover, header > div #logo-container a:active {
-        color: #fff;
-        background-color: #000; }
+      header > div #logo-container a:hover,
+      header > div #logo-container a:active {
+        background-color: #000;
+        color: #fff; }
     header > div #burger-container {
       align-items: center;
       display: flex;
